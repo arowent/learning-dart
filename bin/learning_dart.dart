@@ -1,5 +1,19 @@
-import 'package:learning_dart/learning_dart.dart' as learning_dart;
+// import 'package:learning_dart/learning_dart.dart' as learning_dart;
 
 void main(List<String> arguments) {
-  print('Hello world: ${learning_dart.calculate()}!');
+  Person tim = Person("Tim", 24);
+  Person sam = Person("", 25);
+  tim.info();
+  sam.info();
+}
+
+class Person {
+  String name = "undefined";
+  int age = 0;
+
+  Person(this.name, this.age);
+
+  void info() {
+    print("Your name $name, age $age");
+  }
 }
