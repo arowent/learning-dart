@@ -1,12 +1,5 @@
 // import 'package:learning_dart/learning_dart.dart' as learning_dart;
 
-void main(List<String> arguments) {
-  Person tim = Person("Tim", 24);
-  Person sam = Person("", 25);
-  tim.info();
-  sam.info();
-}
-
 class Person {
   String name = "undefined";
   int age = 0;
@@ -16,4 +9,11 @@ class Person {
   void info() {
     print("Your name $name, age $age");
   }
+}
+
+void main(List<String> arguments) {
+  Person tim = Person("Tim", 24);
+  Person sam = Person("", 25);
+  tim.info();
+  sam.info();
 }
